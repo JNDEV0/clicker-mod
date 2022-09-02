@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="../css/popup.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+<form id="autoclicker-ext-form">
+    <p>Search for element of type (tag): </p>
+    <input type="text" id="autoclicker-ext-search-tag" name="tag" value="button">
+    <p>with this text:</p>
+    <input type="text" name="search" id="autoclicker-ext-search-text">
+    <p>...Or this id (if set, text and type will be ignored):</p>
+    <input type="text" name="searchId" id="autoclicker-ext-search-id">
+    <p>delay between clicks (in seconds):</p>
+    <input type="number" name="delay" id="autoclicker-ext-search-delay" value="1">
+    <p>iframe id (if present)</p>
+    <input type="text" name="iframeId" id="autoclicker-ext-iframe-id">
+    <p>custom attrib (es. title="text")</p>
+    <input type="text" name="customAttrib" id="autoclicker-ext-custom-attrib">
+    <div class="spacer" />
+    <input type="submit" value="Start seek & click" id="autoclicker-ext-enable">
+    <input type="submit" value="Stop" disabled name="stop" id="autoclicker-ext-disable">
+</form>
+<script src="../js/clicker.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,25 @@
+{
+   "action": {
+      "default_popup": "html/popup.html"
+   },
+   "author": "xela92",
+   "content_scripts": [ {
+      "all_frames": true,
+      "js": [ "js/clicker.js" ],
+      "matches": [ "\u003Call_urls>" ],
+      "run_at": "document_idle"
+   } ],
+   "description": "Automatically click on element matching search criteria",
+   "icons": {
+      "128": "icons/autoclicker-128.png",
+      "16": "icons/autoclicker-16.png",
+      "32": "icons/autoclicker-32.png",
+      "48": "icons/autoclicker-48.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAsaVIGkZrC7tzbEA+rW6kHB7Bw63r0RWQ/mku2ItDExR4SKCM9kUT0lEGTOnCiKweSqizK8rixey1AJ+vHQMXqWdqWC+krFT/dwK7eI4EsCqh5kQQkX5Mft1vP0cWxAWpXrRMMIOs7zXk3vZJMzN5Fc/av7JkeoOoYLm15lFfGGl7P2TnzBNAnYIKGGBKoa6hDeD641IVFemrLjKdLXFAHaqac0txxdEdXl4gXvrcta1C3m0SIEa5YdFiTV96wJdlIFHnGyMYZQ1zWV+RfLECo6L3SdyLvuCucqj7AiX6v95D7g+gankeQvVitRwWmbSRZkX5tt2jZofdXVCJxkTefwIDAQAB",
+   "manifest_version": 3,
+   "name": "Autoclicker",
+   "permissions": [ "storage", "activeTab", "scripting" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "0.0.2"
+}
